@@ -1,6 +1,9 @@
 {
   "name": "root",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "prebuild": "tsc",
     "build": "lerna exec --parallel 'BABEL_ENV=build babel src --out-dir dist --source-maps --extensions .ts,.tsx --config-file ../../babel.config.js --delete-dir-on-start --no-comments'"
@@ -15,8 +18,11 @@
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
     "@types/node": "^14.14.21",
+    "@types/react": "^17.0.0",
     "babel-core": "7.0.0-bridge.0",
     "lerna": "^3.22.1",
+    "react": "^17.0.1",
+    "styled-components": "^5.2.1",
     "typescript": "^4.1.3"
   }
 }
