@@ -27,28 +27,24 @@ const Wrapper = styled.div`
   margin: 10px;
 `;
 
-const Label = styled<LabelProps, "label">("label")`
-  margin-right: 10px;
-  font-weight: bold;
-  width: ${({ labelWidth = 100 }) => labelWidth}px;
-`;
+// const Label = styled<LabelProps>("label")`
+//   margin-right: 10px;
+//   font-weight: bold;
+//   width: ${({ labelWidth = 100 }) => labelWidth}px;
+// `;
 
 const NativeInput = styled.input`
   width: 100%;
 `;
 
-export const Input: React.SFC<InputProps & InputLabelProps> = ({
+export const Input: React.FC<InputProps & InputLabelProps> = ({
   label,
   id,
   labelWidth,
   ...rest
 }) => (
   <Wrapper>
-    {label && (
-      <Label labelWidth={labelWidth} htmlFor={id}>
-        {label}:
-      </Label>
-    )}
+    {label && <label htmlFor={id}>{label}:</label>}
     <NativeInput id={id} {...rest} />
   </Wrapper>
 );
