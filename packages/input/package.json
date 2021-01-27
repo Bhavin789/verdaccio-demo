@@ -7,5 +7,6 @@
   "peerDependencies": {
     "react": "^17.0.1",
     "styled-components": "^5.2.1"
-  }
+  },
+  "gitHead": "55f2c81c4920af5fdc76a59ab367684954182eaf"
 }

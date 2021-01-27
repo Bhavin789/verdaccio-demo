@@ -32,7 +32,7 @@ const Input = ({
   ...rest
 }) => React.createElement(Wrapper, null, label && React.createElement("label", {
   htmlFor: id
-}, label, ":"), React.createElement(NativeInput, _extends({
+}, label, "::::"), React.createElement(NativeInput, _extends({
   id: id
 }, rest)));
 

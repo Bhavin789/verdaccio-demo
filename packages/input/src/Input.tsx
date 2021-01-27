@@ -44,7 +44,7 @@ export const Input: React.FC<InputProps & InputLabelProps> = ({
   ...rest
 }) => (
   <Wrapper>
-    {label && <label htmlFor={id}>{label}:</label>}
+    {label && <label htmlFor={id}>{label}::::</label>}
     <NativeInput id={id} {...rest} />
   </Wrapper>
 );
